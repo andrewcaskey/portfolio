@@ -14,11 +14,13 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 
-import { CgFileDocument } from "react-icons/cg";
-
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const navStyle = {
+    fontFamily: 'Calibri, sans-serif',
+    fontWeight: 'bold'
+  };
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -31,7 +33,7 @@ function NavBar() {
   window.addEventListener("scroll", scrollHandler);
 
   return (
-    <Navbar
+    <Navbar style ={navStyle}
       expanded={expand}
       fixed="top"
       expand="md"
@@ -81,20 +83,9 @@ function NavBar() {
                 Projects
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
+                href="https://poetic-snickerdoodle-2591ef.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -104,7 +95,7 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                href="https://github.com/andrewcaskey/portfolio"
                 target="_blank"
                 className="fork-btn-inner"
               >
