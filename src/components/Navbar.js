@@ -18,7 +18,7 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
   const navStyle = {
-    fontFamily: 'Calibri, sans-serif',
+    fontFamily: 'Proxima Nova, sans-serif',
     fontWeight: 'bold'
   };
 
