@@ -14,18 +14,22 @@ function SeoHeader() {
   socialMediaLinks
     .filter(
       (media) =>
+        media.link &&
         !(media.link.startsWith("tel") || media.link.startsWith("mailto"))
     )
     .forEach((media) => {
       sameAs.push(media.link);
     });
 
-  let mail = socialMediaLinks
-    .find((media) => media.link.startsWith("mailto"))
-    .link.substring("mailto:".length);
-  let job = experience.sections
-    ?.find((section) => section.work)
-    ?.experiences?.at(0);
+  // Safely find email if it exists
+  let mail =
+    socialMediaLinks
+      .find((media) => media.link && media.link.startsWith("mailto"))
+      ?.link?.substring("mailto:".length) || "";
+  // Safely get job information if it exists
+  let job =
+    experience.sections?.find((section) => section.work)?.experiences?.at(0) ||
+    {};
 
   let credentials = [];
   certifications.certifications.forEach((certification) => {
@@ -45,10 +49,10 @@ function SeoHeader() {
     email: mail,
     telephone: contactPageData.phoneSection?.subtitle,
     sameAs: sameAs,
-    jobTitle: job.title,
+    jobTitle: job?.title || "",
     worksFor: {
       "@type": "Organization",
-      name: job.company,
+      name: job?.company || "",
     },
     address: {
       "@type": "PostalAddress",

@@ -4,13 +4,23 @@
   font-size: 3rem;
   margin-bottom: 0px;
   margin-top: 0px;
-  text-align: center;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Center icons on mobile */
+@media (max-width: 768px) {
+  .dev-icons {
+    justify-content: center;
+  }
 }
 
 .software-skill-inline {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Google Sans Regular";
 }
 
@@ -23,5 +33,13 @@
 }
 
 .skill-image {
+  height: 48px;
+  width: 48px;
+  object-fit: contain;
+}
+
+/* Ensure iconify icons have consistent sizing */
+.software-skill-inline .iconify {
+  width: 48px;
   height: 48px;
 }

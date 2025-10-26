@@ -195,4 +195,18 @@ export const materialTealTheme = {
   splashBg: "#05505E",
 };
 
-export const chosenTheme = blueTheme;
+export const spaceBlackTheme = {
+  body: "#000000", // Space black background
+  text: "#ffffff", // White text
+  expTxtColor: "#ffffff",
+  highlight: "#303030", // Subtle highlight
+  dark: "#000000",
+  secondaryText: "#cccccc", // Light gray for secondary text
+  imageHighlight: "#202020", // Dark gray for image highlights
+  compImgHighlight: "#202020",
+  jacketColor: "#303030",
+  headerColor: "rgba(32, 32, 32, 0.8)", // Semi-transparent dark gray
+  splashBg: "#000000",
+};
+
+export const chosenTheme = spaceBlackTheme;

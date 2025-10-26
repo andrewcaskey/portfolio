@@ -7,7 +7,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,11 +22,63 @@
 }
 
 .heading {
-  color: black;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .subTitle {
-  color: #868e96;
+  color: #cccccc;
+}
+
+/* Add subtle shadows to cards and containers */
+.experience-card,
+.education-card,
+.certificate-card,
+.project-card,
+.blog-card,
+.contact-div-main,
+.repo-card-div,
+.skill-card,
+.square-card,
+.achievement-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.experience-card:hover,
+.education-card:hover,
+.certificate-card:hover,
+.project-card:hover,
+.blog-card:hover,
+.repo-card-div:hover,
+.skill-card:hover,
+.square-card:hover,
+.achievement-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7), 0 16px 32px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+}
+
+/* Add subtle text shadows */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Button styling with subtle shadows */
+button,
+.main-button {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+button:hover,
+.main-button:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
 }
 
 /* Animations */
