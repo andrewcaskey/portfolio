@@ -1,0 +1,62 @@
+.dev-icons {
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Center icons on mobile */
+@media (max-width: 768px) {
+  .dev-icons {
+    justify-content: center;
+  }
+}
+
+.software-skill-inline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Google Sans Regular";
+  transition: transform 0.2s ease, filter 0.2s ease;
+  cursor: default;
+}
+
+.software-skill-inline:hover {
+  transform: scale(1.2) translateY(-3px);
+  filter: drop-shadow(0 0 8px currentColor);
+}
+
+.software-skill-inline > i {
+  color: #868e96;
+  transition: color 0.2s ease;
+}
+
+.software-skill-inline > i:hover {
+  color: #645beb;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .software-skill-inline {
+    transition: none;
+  }
+  .software-skill-inline:hover {
+    transform: none;
+  }
+}
+
+.skill-image {
+  height: 48px;
+  width: 48px;
+  object-fit: contain;
+}
+
+/* Ensure iconify icons have consistent sizing */
+.software-skill-inline .iconify {
+  width: 48px;
+  height: 48px;
+}

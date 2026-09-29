@@ -1,0 +1,80 @@
+{
+  "data": [
+    {
+      "id": "R_aws_cost_analyzer",
+      "name": "aws-cost-analyzer",
+      "createdAt": "2024-06-01T00:00:00Z",
+      "url": "https://github.com/andrewcaskey/aws-cost-analyzer",
+      "description": "Terraform project enabling AWS budget alerts and cost anomaly detection deployable in under 10 minutes. Teaches IaC fundamentals with AWS Budgets, SNS, and CloudWatch.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HCL",
+          "iconifyClass": "simple-icons:terraform"
+        },
+        {
+          "name": "Shell",
+          "iconifyClass": "logos-bash-icon"
+        }
+      ]
+    },
+    {
+      "id": "R_market_research_data",
+      "name": "Market-Research-Data",
+      "createdAt": "2024-09-01T00:00:00Z",
+      "url": "https://github.com/andrewcaskey/Market-Research-Data",
+      "description": "Self-hosted B2B market intelligence platform with SEC EDGAR integration, FastAPI REST backend, PostgreSQL with pgvector, and React dashboard for company prospecting.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "TypeScript",
+          "iconifyClass": "logos-typescript-icon"
+        },
+        {
+          "name": "PostgreSQL",
+          "iconifyClass": "logos-postgresql"
+        }
+      ]
+    },
+    {
+      "id": "R_yt_dlp_application",
+      "name": "yt-dlp-application",
+      "createdAt": "2024-03-01T00:00:00Z",
+      "url": "https://github.com/andrewcaskey/yt-dlp-application",
+      "description": "Flask web app providing a UI for downloading YouTube videos as MP3 files, with batch download and ZIP archive export support.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        }
+      ]
+    },
+    {
+      "id": "R_opentelemetry_go",
+      "name": "opentelemetry-go",
+      "createdAt": "2026-04-10T00:00:00Z",
+      "url": "https://github.com/open-telemetry/opentelemetry-go",
+      "description": "Contributed to the official OpenTelemetry Go SDK — the reference implementation for distributed tracing, metrics, and logging instrumentation in Go services.",
+      "isFork": true,
+      "languages": [
+        {
+          "name": "Go",
+          "iconifyClass": "logos-go"
+        },
+        {
+          "name": "OpenTelemetry",
+          "iconifyClass": "simple-icons:opentelemetry"
+        }
+      ]
+    }
+  ]
+}

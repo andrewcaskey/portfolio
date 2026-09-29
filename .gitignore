@@ -1,0 +1,50 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Code coverage profiles and other test artifacts
+*.out
+coverage.*
+*.coverprofile
+profile.cov
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# env file
+.env
+
+# Logs
+*.log
+
+# Editor/IDE
+.vscode/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+
+# Node / Next.js build artifacts
+node_modules/
+.next/
+build/
+public/_headers
+
+# Job tracker — runtime files not tracked in git
+
+# Claude Code — track project-level agent config, ignore personal memory
+.claude/*
+!.claude/agents/
+!.claude/skills/
+!.claude/settings.json

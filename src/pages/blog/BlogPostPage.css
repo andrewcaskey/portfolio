@@ -1,0 +1,259 @@
+.blog-post-main {
+  text-align: center;
+  overflow-x: hidden; /* prevent any child from expanding the page width */
+}
+
+.blog-post-content {
+  width: 70%;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 40px 0 60px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.blog-back-link {
+  display: inline-block;
+  font-size: 15px;
+  text-decoration: none;
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+
+.blog-back-link:hover {
+  text-decoration: underline;
+}
+
+.blog-post-loading,
+.blog-post-error {
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+/* Markdown body */
+
+.blog-markdown-body h1,
+.blog-markdown-body h2,
+.blog-markdown-body h3,
+.blog-markdown-body h4 {
+  font-weight: 600;
+  margin: 1.5em 0 0.5em;
+  line-height: 1.3;
+  font-family: "Google Sans Regular";
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.blog-markdown-body h1 {
+  font-size: 2rem;
+}
+.blog-markdown-body h2 {
+  font-size: 1.5rem;
+}
+.blog-markdown-body h3 {
+  font-size: 1.25rem;
+}
+
+.blog-markdown-body p {
+  line-height: 1.75;
+  margin-bottom: 1em;
+  font-size: 1rem;
+}
+
+/* Inline code */
+.blog-markdown-body code {
+  background: rgba(128, 128, 128, 0.15);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+.blog-markdown-body :not(pre) > code {
+  word-break: break-word;
+}
+
+/* Code blocks — wrapped in .blog-code-scroll div by react-markdown renderer */
+.blog-code-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.5em 0;
+  max-width: 100%;
+}
+
+.blog-code-scroll pre {
+  background: rgba(128, 128, 128, 0.1);
+  padding: 20px;
+  border-radius: 6px;
+  margin: 0;
+  white-space: pre;
+  word-break: normal;
+  min-width: 0;
+}
+
+.blog-code-scroll pre code {
+  background: none;
+  padding: 0;
+  word-break: normal;
+  white-space: pre;
+  font-size: inherit;
+}
+
+/* Lists */
+.blog-markdown-body ul,
+.blog-markdown-body ol {
+  padding-left: 2em;
+  margin-bottom: 1em;
+  line-height: 1.75;
+}
+
+.blog-markdown-body blockquote {
+  border-left: 4px solid #868e96;
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+  opacity: 0.85;
+}
+
+.blog-markdown-body a {
+  text-decoration: underline;
+}
+
+.blog-markdown-body hr {
+  border: none;
+  border-top: 1px solid #868e96;
+  margin: 2em 0;
+  opacity: 0.4;
+}
+
+/* Images */
+.blog-markdown-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Tables — wrapped in .blog-table-scroll div by react-markdown renderer */
+.blog-table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.5em 0;
+  max-width: 100%;
+}
+
+.blog-table-scroll table {
+  border-collapse: collapse;
+  min-width: 100%;
+}
+
+.blog-markdown-body th,
+.blog-markdown-body td {
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  padding: 8px 12px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.blog-markdown-body th {
+  font-weight: 600;
+  background: rgba(128, 128, 128, 0.08);
+}
+
+/* Tablet */
+@media (max-width: 1380px) {
+  .blog-post-content {
+    width: 80%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  /* Full-width + explicit padding avoids margin:auto going negative
+     when a child (pre, table) is wider than 90vw */
+  .blog-post-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 20px 40px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .blog-markdown-body h1 {
+    font-size: 1.6rem;
+  }
+  .blog-markdown-body h2 {
+    font-size: 1.3rem;
+  }
+  .blog-markdown-body h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Let table cells wrap on mobile so they don't force page-level overflow */
+  .blog-markdown-body th,
+  .blog-markdown-body td {
+    white-space: normal;
+    min-width: 80px;
+  }
+
+  /* Wrap code lines on mobile instead of scrolling */
+  .blog-code-scroll pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    padding: 14px;
+  }
+
+  .blog-code-scroll pre code {
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .blog-markdown-body h1 {
+    font-size: 1.4rem;
+  }
+  .blog-markdown-body h2 {
+    font-size: 1.2rem;
+  }
+  .blog-markdown-body h3 {
+    font-size: 1.05rem;
+  }
+  .blog-markdown-body p,
+  .blog-markdown-body li {
+    font-size: 0.95rem;
+  }
+  .blog-markdown-body code {
+    font-size: 0.82em;
+  }
+}
+
+.blog-post-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  gap: 16px;
+}
+
+.blog-nav-prev {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  max-width: 45%;
+  line-height: 1.4;
+}
+
+.blog-nav-next {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: auto;
+  max-width: 45%;
+  line-height: 1.4;
+}
