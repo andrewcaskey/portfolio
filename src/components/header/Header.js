@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Home", to: "/" },
   { label: "Projects", to: "/projects" },
   { label: "Blog", to: "/blog" },
+  { label: "SRE Blog", href: "https://sre.andrewcaskey.com", external: true },
   { label: "Contact", to: "/contact" },
 ];
 
@@ -27,18 +28,31 @@ class Header extends Component {
               <span className="navicon"></span>
             </label>
             <ul className="menu">
-              {navLinks.map(({ label, to }) => (
-                <li key={to}>
-                  <NavLink
-                    exact={to === "/"}
-                    to={to}
-                    className="grey-color"
-                    activeClassName="active"
-                  >
-                    {label}
-                  </NavLink>
-                </li>
-              ))}
+              {navLinks.map(({ label, to, href, external }) =>
+                external ? (
+                  <li key={href}>
+                    <a
+                      href={href}
+                      className="grey-color"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {label}
+                    </a>
+                  </li>
+                ) : (
+                  <li key={to}>
+                    <NavLink
+                      exact={to === "/"}
+                      to={to}
+                      className="grey-color"
+                      activeClassName="active"
+                    >
+                      {label}
+                    </NavLink>
+                  </li>
+                )
+              )}
             </ul>
           </header>
         </div>

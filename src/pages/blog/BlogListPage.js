@@ -35,6 +35,17 @@ export default function BlogListPage({ theme }) {
             >
               {blogSection.subtitle}
             </p>
+            {blogSection.externalBlog && (
+              <a
+                className="blog-external-link"
+                href={blogSection.externalBlog.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: theme.imageHighlight }}
+              >
+                {blogSection.externalBlog.label} →
+              </a>
+            )}
           </div>
 
           <div className="blog-filter-bar">

@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "AndrewCaskey",
   nickname: "",
   subTitle: "",
-  resumeLink: "#",
+  resumeLink: "/Andrew_Caskey_Resume.pdf",
   portfolio_repository: "#",
   githubProfile: "https://github.com/andrewcaskey",
 };
@@ -394,6 +394,10 @@ const contactPageData = {
 const blogSection = {
   title: "Blog",
   subtitle: "Thoughts on observability, infrastructure, and engineering.",
+  externalBlog: {
+    label: "Read more on my SRE blog",
+    url: "https://sre.andrewcaskey.com",
+  },
   posts: [
     {
       slug: "linux-namespaces-container-isolation",
