@@ -1,6 +1,6 @@
 # Linux Namespaces: The Building Blocks of Container Isolation
 
-**Date:** May 31, 2026 · **Category:** Containers · **Series:** Docker Deep Dive (Part 2)
+**Date:** May 31, 2026 · **Category:** Docker · **Series:** Docker Deep Dive (Part 2)
 
 > **Reference:** [Demystifying Container Isolation: Namespaces and Control Groups Explained](https://towardsdev.com/demystifying-container-isolation-namespaces-and-control-groups-explained-632b293f007e)
 
