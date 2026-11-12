@@ -403,7 +403,7 @@ const blogSection = {
       slug: "linux-namespaces-container-isolation",
       title: "Linux Namespaces: The Building Blocks of Container Isolation",
       date: "2026-05-31",
-      category: "Containers",
+      category: "Docker",
       series: "Docker Deep Dive",
       seriesOrder: 2,
       description:
@@ -413,7 +413,7 @@ const blogSection = {
       slug: "docker-from-the-ground-up",
       title: "Docker from the Ground Up: A Hierarchical View",
       date: "2026-05-31",
-      category: "Containers",
+      category: "Docker",
       series: "Docker Deep Dive",
       seriesOrder: 1,
       description:
@@ -423,21 +423,11 @@ const blogSection = {
       slug: "agentic-web-security",
       title: "The Hidden Dangers of AI Agents on the Open Web",
       date: "2026-05-23",
-      category: "Security",
+      category: "AI",
       series: null,
       seriesOrder: null,
       description:
         "A summary of a recent arXiv survey mapping the full threat landscape for agentic AI systems — prompt injection, memory poisoning, toolchain abuse, and why the Agentic Web makes all of it harder.",
-    },
-    {
-      slug: "get-into-it",
-      title: "Get Into It",
-      date: "2026-05-22",
-      category: "Entrepreneurship",
-      series: null,
-      seriesOrder: null,
-      description:
-        "Notes on building businesses, solving problems for people, and keeping your health while you do it.",
     },
     {
       slug: "getting-started-with-opentelemetry",

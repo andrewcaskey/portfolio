@@ -10,9 +10,13 @@ import "./BlogListPage.css";
 export default function BlogListPage({ theme }) {
   const [activeCategory, setActiveCategory] = useState("All");
 
+  // Canonical taxonomy order; only categories that actually have posts are shown.
+  const CATEGORY_ORDER = ["Observability", "Docker", "AWS", "Cloudflare", "AI"];
+  const present = new Set(blogSection.posts.map((p) => p.category));
   const categories = [
     "All",
-    ...new Set(blogSection.posts.map((p) => p.category)),
+    ...CATEGORY_ORDER.filter((c) => present.has(c)),
+    ...[...present].filter((c) => !CATEGORY_ORDER.includes(c)),
   ];
 
   const filtered =

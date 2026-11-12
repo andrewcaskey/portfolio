@@ -1,6 +1,6 @@
 # The Hidden Dangers of AI Agents on the Open Web
 
-**Date:** May 23, 2026 · **Category:** Security
+**Date:** May 23, 2026 · **Category:** AI
 
 > **Reference:** Deng, Z., Gui, J., & Zhang, W. (2026). *From Secure Agentic AI to Secure Agentic Web: Challenges, Threats, and Future Directions.* arXiv:2603.01564. [https://arxiv.org/abs/2603.01564](https://arxiv.org/abs/2603.01564)
 

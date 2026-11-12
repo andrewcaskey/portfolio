@@ -1,6 +1,6 @@
 # Docker from the Ground Up: A Hierarchical View
 
-**Date:** May 31, 2026 · **Category:** Containers · **Series:** Docker Deep Dive (Part 1)
+**Date:** May 31, 2026 · **Category:** Docker · **Series:** Docker Deep Dive (Part 1)
 
 ---
 
