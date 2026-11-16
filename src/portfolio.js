@@ -400,6 +400,17 @@ const blogSection = {
   },
   posts: [
     {
+      slug: "machine-native-web",
+      title:
+        "From Open Links to Autonomous Agents: Building the Machine-Native Web",
+      date: "2026-11-15",
+      category: "AI",
+      series: null,
+      seriesOrder: null,
+      description:
+        "Research from parallel.ai — how the open web's DNA is re-emerging as machine-native standards, and why autonomous agents are becoming the primary consumers of data and services.",
+    },
+    {
       slug: "linux-namespaces-container-isolation",
       title: "Linux Namespaces: The Building Blocks of Container Isolation",
       date: "2026-05-31",
