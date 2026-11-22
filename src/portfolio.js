@@ -22,7 +22,7 @@ const greeting = {
   title: "Andrew Caskey",
   logo_name: "AndrewCaskey",
   nickname: "",
-  subTitle: "",
+  subTitle: "Cloud Infrastructure & Observability Engineer",
   resumeLink: "/Andrew_Caskey_Resume.pdf",
   portfolio_repository: "#",
   githubProfile: "https://github.com/andrewcaskey",
@@ -45,6 +45,47 @@ const socialMediaLinks = [
 
 const skills = {
   data: [
+    {
+      title: "Cloud & Infrastructure as Code",
+      fileName: "CloudInfraImg",
+      skills: [
+        "⚡ Terraform and Ansible for infrastructure provisioning, drift detection, and configuration management",
+        "⚡ AWS Certified — hands-on EC2, EKS, S3, CloudWatch, Lambda, and RDS experience",
+        "⚡ Multi-cloud deployments across AWS, Azure, GCP, and Hetzner; DNS and edge via Cloudflare",
+      ],
+      softwareSkills: [
+        {
+          skillName: "Terraform",
+          fontAwesomeClassname: "simple-icons:terraform",
+          style: { color: "#7B42BC" },
+        },
+        {
+          skillName: "AWS",
+          fontAwesomeClassname: "simple-icons:amazonaws",
+          style: { color: "#FF9900" },
+        },
+        {
+          skillName: "Azure",
+          fontAwesomeClassname: "simple-icons:microsoftazure",
+          style: { color: "#0089D6" },
+        },
+        {
+          skillName: "GCP",
+          fontAwesomeClassname: "simple-icons:googlecloud",
+          style: { color: "#4285F4" },
+        },
+        {
+          skillName: "Cloudflare",
+          fontAwesomeClassname: "simple-icons:cloudflare",
+          style: { color: "#F38020" },
+        },
+        {
+          skillName: "Ansible",
+          fontAwesomeClassname: "simple-icons:ansible",
+          style: { color: "#EE0000" },
+        },
+      ],
+    },
     {
       title: "Observability & Monitoring",
       fileName: "DataScienceImg",
@@ -84,52 +125,6 @@ const skills = {
           skillName: "New Relic",
           fontAwesomeClassname: "simple-icons:newrelic",
           style: { color: "#008C99" },
-        },
-      ],
-    },
-    {
-      title: "Cloud & Infrastructure as Code",
-      fileName: "CloudInfraImg",
-      skills: [
-        "⚡ AWS Certified — hands-on EC2, EKS, S3, CloudWatch, Lambda experience",
-        "⚡ Multi-cloud deployments across AWS, Azure, GCP, and Hetzner; DNS and edge via Cloudflare",
-        "⚡ Infrastructure as code with Terraform, Ansible, and Monaco",
-      ],
-      softwareSkills: [
-        {
-          skillName: "AWS",
-          fontAwesomeClassname: "simple-icons:amazonaws",
-          style: { color: "#FF9900" },
-        },
-        {
-          skillName: "Azure",
-          fontAwesomeClassname: "simple-icons:microsoftazure",
-          style: { color: "#0089D6" },
-        },
-        {
-          skillName: "GCP",
-          fontAwesomeClassname: "simple-icons:googlecloud",
-          style: { color: "#4285F4" },
-        },
-        {
-          skillName: "Hetzner",
-          fontAwesomeClassname: "simple-icons:hetzner",
-          style: { color: "#D50C2D" },
-        },
-        {
-          skillName: "Cloudflare",
-          fontAwesomeClassname: "simple-icons:cloudflare",
-          style: { color: "#F38020" },
-        },
-        {
-          skillName: "Terraform",
-          fontAwesomeClassname: "simple-icons:terraform",
-          style: { color: "#7B42BC" },
-        },
-        {
-          skillName: "Ansible",
-          fontAwesomeClassname: "simple-icons:ansible",
-          style: { color: "#EE0000" },
         },
       ],
     },

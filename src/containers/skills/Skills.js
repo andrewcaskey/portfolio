@@ -20,7 +20,7 @@ export default function Skills(props) {
               </p>
             )}
             <h1 className="skills-header" style={{ color: theme.text }}>
-              What I Do?
+              What I Do
             </h1>
           </div>
         </Fade>
